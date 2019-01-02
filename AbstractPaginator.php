@@ -638,5 +638,17 @@ abstract class AbstractPaginator implements Htmlable
     public function __toString()
     {
         return (string) $this->render();
-    }
+	}
+
+	//granada. Nelson. 20180905
+	public function set_PerPage($perPage)
+	{
+		$this->perPage = $perPage;
+	}
+
+	//granada. Nelson. 20180905
+	public function set_CurrentPage($currentPage)
+	{
+		$this->currentPage = $currentPage;
+	}
 }
